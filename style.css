@@ -1,4 +1,57 @@
 body {
     display: flex;
+ 
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: center;
+
+   background-image: url('assets/sidebar-img.jpg'); 
+   background-size: cover;
+   background-position: center;
+   width: 30vw;
+   height: 100vh;
+
+   color: rgb(207, 228, 247);
+   border: 2px solid red;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: left;
+    margin-top: 10vh;
+    width: inherit;
+    align-items: center;
+    opacity: 0.9;
+    
+
+    /* border: 2px solid pink; */
+
+}
+
+.logo-section img {
+    margin-left: 2vw;
+}
+
+
+.footer{
+    margin-top: auto;
+    margin-bottom : 1vh;
+    font-size: 0.8rem;
+    color: rgb(230, 243, 255);
+    background-color: rgba(8, 20, 37, 0.5);
+    /* opacity: 0.6; */
+    /* border: 2px solid yellow; */
+}
+
+.footer a {
+    color: rgb(230, 243, 255);
+}
+
+.content {
+    width: 70wv;
 }
 
