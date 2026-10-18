@@ -3,10 +3,10 @@ body {
  
 }
 
-/* @font-face {
+@font-face {
     font-family: norse;
     src: url(assets/Norsebold.otf);
-} */
+}
 
 .sidebar {
     display: flex;
@@ -43,7 +43,7 @@ body {
 
 .logo-text {
     text-align: center;
-    /* font-family: norse; */
+    font-family: norse, system-ui, Arial, sans-serif;
     font-size: 3.5em;
     /* border: 1px solid green; */
     /* margin-right: 2vw; */
