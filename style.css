@@ -65,6 +65,90 @@ body {
 }
 
 .content {
-    width: 70wv;
+    display: flex;
+    flex-direction: column;
+    /* width: 70wv; */
+    background-color: rgb(235, 243, 249);
+    color: rgb(3, 15, 34);
 }
 
+.headline {
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    max-width: 75%;
+    margin-top: 4em;
+    margin-left: 2em;
+}
+
+.headline .hero, .form-title {
+    margin-bottom: 1rem;
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    font-weight: bold;
+    line-height: normal;
+}
+
+.headline .sub_hero {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-fields {
+    background-color: white;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.form-title {
+    margin-left: 40px;
+}
+
+.field-rows {
+    flex: auto;
+}
+
+.field-row {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    margin-bottom: 40px;
+    height: initial;
+}
+
+.field-row-last {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    margin-bottom: 10px;
+    height: initial;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field input {
+    width: 250px;
+    margin-right: 80px;
+}
+
+.submit-button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.log-in {
+    margin-left: 40px;
+}
