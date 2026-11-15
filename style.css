@@ -14,14 +14,14 @@ body {
     justify-content: space-between;
     align-items: center;
 
-   background-image: url('assets/sidebar-img.jpg'); 
-   background-size: cover;
-   background-position: center;
-   width: 30vw;
-   height: 100vh;
+    background-image: url('assets/sidebar-img.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 100vh;
 
-   color: rgb(207, 228, 247);
-   /* border: 2px solid red; */
+    color: rgb(207, 228, 247);
+    /* border: 2px solid red; */
 }
 
 .logo-section {
@@ -32,22 +32,16 @@ body {
     align-items: center;
     opacity: 0.9;
     background-color: hsl(206, 100%, 8%);
-    /* border: 2px solid blue; */
 }
 
 .logo-image {
     width: 30%;
-    /* margin-left: 2vw; */
-    /* border: 1px solid pink; */
 }
 
 .logo-text {
     text-align: center;
     font-family: norse, system-ui, Arial, sans-serif;
     font-size: 3.5em;
-    /* border: 1px solid green; */
-    /* margin-right: 2vw; */
-    /* flex: auto; */
 }
 
 .footer{
@@ -56,8 +50,6 @@ body {
     font-size: 0.8rem;
     color: rgb(230, 243, 255);
     background-color: rgba(8, 20, 37, 0.5);
-    /* opacity: 0.6; */
-    /* border: 2px solid yellow; */
 }
 
 .footer a {
@@ -67,7 +59,6 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    /* width: 70wv; */
     background-color: rgb(235, 243, 249);
     color: rgb(3, 15, 34);
 }
@@ -100,6 +91,7 @@ body {
 
 .title-fields {
     background-color: white;
+    box-shadow: 0 2px 5px grey;
 }
 
 .form {
@@ -107,10 +99,12 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 .form-title {
     margin-left: 40px;
+    margin-top: 20px;
 }
 
 .field-rows {
@@ -121,7 +115,7 @@ body {
     display: flex;
     flex: 1;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     height: initial;
 }
 
@@ -143,12 +137,40 @@ body {
     margin-right: 80px;
 }
 
+input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: rgb(41, 84, 124)
+    box-shadow: 0 2px 5px grey;
+}
+
+.field input[type="password"]:user-invalid {
+    border : 1px solid red; 
+}
+
 .submit-button {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-top: 30px;
     margin-left: 40px;
 }
 
+button {
+    background: rgb(14, 43, 79);
+    color: rgb(235, 243, 249);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px grey;
+    padding: 8px 25px;
+    font-weight: 600;
+}
+
 .log-in {
     margin-left: 40px;
+    color : rgb(8, 24, 44);
 }
+ .log-in a {
+    color:  rgb(8, 24, 44);
+ }
