@@ -1,5 +1,6 @@
 body {
     display: flex;
+    min-height: 100vh;
  
 }
 
@@ -18,7 +19,6 @@ body {
     background-size: cover;
     background-position: center;
     width: 30vw;
-    height: 100vh;
 
     color: rgb(207, 228, 247);
     /* border: 2px solid red; */
@@ -59,6 +59,7 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    flex: 1;
     background-color: rgb(235, 243, 249);
     color: rgb(3, 15, 34);
 }
@@ -92,6 +93,8 @@ body {
 .title-fields {
     background-color: white;
     box-shadow: 0 2px 5px grey;
+    padding-left: 40px;
+    padding-bottom: 20px;
 }
 
 .form {
@@ -99,11 +102,10 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 40px;
-    margin-bottom: 20px;
+    
 }
 
 .form-title {
-    margin-left: 40px;
     margin-top: 20px;
 }
 
@@ -143,8 +145,9 @@ input {
 }
 
 input:focus {
-    border: rgb(41, 84, 124)
+    border: 2px solid rgb(41, 88, 151);
     box-shadow: 0 2px 5px grey;
+    outline: none;
 }
 
 .field input[type="password"]:user-invalid {
@@ -165,6 +168,7 @@ button {
     box-shadow: 2px 2px 5px grey;
     padding: 8px 25px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .log-in {
